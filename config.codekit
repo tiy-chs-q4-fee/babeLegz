@@ -4672,7 +4672,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 735818,
 		"inputAbbreviatedPath": "\/images\/tbdBG.png",
 		"outputAbbreviatedPath": "\/images\/tbdBG.png",
 		"outputPathIsOutsideProject": 0,
@@ -4866,7 +4866,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Charles",
+"lastSavedByUser": "Chris Otten",
 "manualImportLinks": {
 	},
 "projectAttributes": {
