@@ -4648,15 +4648,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/css\/app.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/app.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/images\/tbdBackground.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4667,26 +4658,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/images\/tbdBG.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/tbdBG.png",
-		"outputAbbreviatedPath": "\/images\/tbdBG.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/js\/app.js": {
 		"fileType": 64,
@@ -4866,7 +4837,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Charles",
+"lastSavedByUser": "Ansley Jones",
 "manualImportLinks": {
 	},
 "projectAttributes": {
