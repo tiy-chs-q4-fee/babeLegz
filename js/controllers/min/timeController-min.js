@@ -1,0 +1,1 @@
+angular.module("tbdModules.controllers").controller("timeController",function(t,o,r){t.grabDate=r.getDate(),t.grabMonth=r.monthCount(t.grabDate.toString())});
