@@ -31,10 +31,28 @@ angular.module("tbdModules.services")
       return numMonths;
     };
 
+    var gifts = [];
+
+    var getGifts = function() {
+      return gifts;
+    };
+
+    var addGift = function (newGift) {
+      gifts.push(newGift);
+      console.log(gifts);
+    };
+
     // return methods
     return{
       getDate: getDate,
       createDate: createDate,
-      monthCount: monthCount
+      monthCount: monthCount,
+      getGifts: getGifts,
+      addGift: addGift
     };
-  })
+
+    var rsvp =[];
+
+    
+
+  });
