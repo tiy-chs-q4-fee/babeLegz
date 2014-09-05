@@ -1,12 +1,26 @@
 angular.module("tbdModules.services")
   .factory("budgetService", function(){
-      var budget;
+      var budget={
+        total:10000,
+        left:7500,
+        expense:[{
+          item:"Wedding Dress",
+          price:2000,
+        },
+        {
+          item:"Tux",
+          price:500,
+        }]
+      };
 
-      var getBudget = function(budget){
+      var getBudget = function(){
+
         return budget;
       };
-      var addBudget = function (newBudget) {
-        budget = newBudget;
+      var addBudget = function (amount) {
+        budget = amount;
+        console.log(budget);
+
 
       };
 
@@ -14,7 +28,8 @@ angular.module("tbdModules.services")
 
 
     return{
-      getBudget : getBudget
+      getBudget : getBudget,
+      addBudget : addBudget
     }
 
 
