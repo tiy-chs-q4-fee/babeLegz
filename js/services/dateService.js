@@ -43,7 +43,7 @@ angular.module("tbdModules.services")
     };
 
     var rsvp = [
-    {text:'Mark Twain', done:true},         
+    {text:'Mark Twain', done:true},
     {text: 'Sara Elizabeth', done:false},
     {text: 'Sara Elizabeth', done:false},
     {text: 'Sara Elizabeth', done:false},
@@ -71,7 +71,7 @@ angular.module("tbdModules.services")
       rsvpCtrl : rsvpCtrl
     };
 
-    
+
 
 
 
