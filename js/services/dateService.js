@@ -31,10 +31,18 @@ angular.module("tbdModules.services")
       return numMonths;
     };
 
+    var gifts = [];
+
+    var addGift = function (newGift) {
+      gifts.unshift(newGift);
+      console.log(gifts);
+    };
+
     // return methods
     return{
       getDate: getDate,
       createDate: createDate,
-      monthCount: monthCount
+      monthCount: monthCount,
+      addGift: addGift
     };
-  })
+  });
