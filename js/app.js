@@ -20,9 +20,8 @@ angular.module("tbdModules", ["tbdModules.controllers","tbdModules.services", "n
         templateUrl: "views/gifts.html",
         controller: "giftController"
       })
-      })
-      .when("/RSVP",{
-        templateUrl: "views/RSVP.html",
+      .when("/rsvp",{
+        templateUrl: "views/rsvp.html",
         controller: "rsvpController"
       })
       .otherwise({

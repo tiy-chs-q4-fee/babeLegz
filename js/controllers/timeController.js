@@ -5,4 +5,7 @@ angular.module("tbdModules.controllers")
     $scope.goToGifts = function () {
     $location.path("/gifts");
     };
+    $scope.goToRSVP = function () {
+    $location.path("/rsvp");
+    };
   });
