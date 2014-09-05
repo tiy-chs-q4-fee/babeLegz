@@ -1,41 +1,51 @@
-@import "settings";
-@import "foundation";
-@import "main";
+img.bg {
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  }
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switch",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+.headerTitle {
+    color:rgba(255,255,255,.9);
+    font-family: 'Oswald', sans-serif;
+    font-weight:300;
+    font-size:100px;
+    text-align:center;
+    margin-top:10%;
+}
+
+h3 {
+    font-size:1.5em;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+    color:rgba(255,255,255,.7);
+}
+.dateForm {
+    text-align:center;
+    input {
+        background-color:rgba(255,255,255,.1);
+        font-weight:300;
+        width:150px;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 10px;
+        border: none;
+    }
+    .subButt {
+        border-radius:4px;
+        font-family: 'Great Vibes', cursive;
+        font-size:1.6em;
+        padding-top:5px;
+        padding-bottom:3px;
+        padding-left:10px;
+        padding-right:13px;
+        background-color:rgba(0, 140, 186, .7);
+    }
+    .subButt:hover {
+        background-color:rgba(0, 140, 186, 1);
+    }
+}
