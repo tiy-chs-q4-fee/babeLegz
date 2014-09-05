@@ -16,6 +16,10 @@ angular.module("tbdModules", ["tbdModules.controllers","tbdModules.services", "n
         templateUrl: "views/timeline.html",
         controller: "timeController"
       })
+      .when("/budget",{
+        templateUrl: "views/budget.html",
+        controller: "budgetController"
+      })
       .when("/gifts",{
         templateUrl: "views/gifts.html",
         controller: "giftController"
