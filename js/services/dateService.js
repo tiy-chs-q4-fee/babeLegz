@@ -3,32 +3,38 @@ angular.module("tbdModules.services")
     var myDate = [];
 
     var getDate = function() {
-      return myDate[0];
+      return myWeddingDay;
     };
+
     var createDate = function(newMyDate){
-      myDate.unshift(newMyDate);
+      myWeddingDay = new Date(newMyDate);
     };
 
     var monthCount = function(myDate){
       console.log(myDate);
       var numMonths;
-      var year = Number(moment(myDate).utc().format('YYYY'));
-      var month= Number(moment(myDate).utc().format('MM'));
-      var nowYear = Number(moment().utc().format('YYYY'));
-      var nowMonth= Number(moment().utc().format('MM'));
-      var diffYear = year - nowYear;
-        if(diffYear >= 1 && month > nowMonth){
-              var numMonths = (month - nowMonth) + 12*diffYear;
-        }else if(diffYear >= 1 && month < nowMonth){
-              var numMonths= 12*diffYear - (nowMonth - month);
-        }else if(diffYear === 1){
-              var numMonths = 12;
-        }else if(diffYear < 1 && month > nowMonth){
-              var numMonths = month - nowMonth;
-        }else if(diffYear < 1 && month < nowMonth){
-              var numMonths= nowMonth - month;
-        }
-      return numMonths;
+      var currentDate = new Date();
+      console.log(currentDate);
+
+      numMonths = currentDate - myDate;
+      // var year = Number(moment(myDate).utc().format('YYYY'));
+      // var month= Number(moment(myDate).utc().format('MM'));
+      // var nowYear = Number(moment().utc().format('YYYY'));
+      // var nowMonth= Number(moment().utc().format('MM'));
+      // var diffYear = year - nowYear;
+      //   if(diffYear >= 1 && month > nowMonth){
+      //         var numMonths = (month - nowMonth) + 12*diffYear;
+      //   }else if(diffYear >= 1 && month < nowMonth){
+      //         var numMonths= 12*diffYear - (nowMonth - month);
+      //   }else if(diffYear === 1){
+      //         var numMonths = 12;
+      //   }else if(diffYear < 1 && month > nowMonth){
+      //         var numMonths = month - nowMonth;
+      //   }else if(diffYear < 1 && month < nowMonth){
+      //         var numMonths= nowMonth - month;
+      //   }
+      // return numMonths;
+      console.log(numMonths)
     };
 
     var gifts = [];
