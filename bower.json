@@ -1,0 +1,19 @@
+{
+  "name": "bigDay",
+  "version": "0.0.0",
+  "authors": [
+    "Natalie Miller <nataliemiller03@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.23",
+    "angular-route": "~1.2.23"
+  }
+}
