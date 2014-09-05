@@ -1,0 +1,23 @@
+<div class="budgetPage">
+  <h1>The Big Budget</h1>
+  <h3>Your total wedding budget: {{budget.total}}</h3>
+  <h3>What you have left: {{budget.left}}</h3>
+
+  <h3>Purchases:</h3>
+  <ul ng-repeat="expense in budget.expense">
+    <li>{{expense.item}} - {{expense.price}}</li>
+  </ul>
+
+  <form action="">
+  <h3>What is your total budget?</h3>
+  <input type="number" ng-model="newBudget.total">
+  <button ng-click="createBudget(newBudget)">Submit</button>
+  <h3>What have you purchased so far?</h3>
+  <h3>Item:</h3>
+  <input type="text" ng-click="newBudget.expense.item">
+  <h3>Price:</h3>
+  <input type="number" ng-click="newBudget.expense.price">
+  <button ng-click="refactorBudget(newBudget.expense)">Add Expense</button>
+
+</form>
+</div>
