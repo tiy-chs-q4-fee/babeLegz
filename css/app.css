@@ -6059,14 +6059,48 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
-body {
-  background-image: url("../images/tbdBG.png");
-  background-size: cover;
-  font-family: 'Oswald', sans-serif; }
+img.bg {
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; }
 
-h1 {
-  color: white;
+.headerTitle {
+  color: rgba(255, 255, 255, 0.9);
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  font-size: 7em;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 10%; }
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: rgba(255, 255, 255, 0.7); }
+
+.dateForm {
   text-align: center; }
+  .dateForm input {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 300;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: none; }
+  .dateForm .subButt {
+    border-radius: 4px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.6em;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 13px;
+    background-color: rgba(0, 140, 186, 0.7); }
+  .dateForm .subButt:hover {
+    background-color: #008cba; }
