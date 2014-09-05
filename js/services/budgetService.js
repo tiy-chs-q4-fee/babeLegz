@@ -5,8 +5,9 @@ angular.module("tbdModules.services")
       var getBudget = function(budget){
         return budget;
       };
-      var addBudget = function (newBudget) {
-        budget = newBudget;
+      var addBudget = function (amount) {
+        budget = amount;
+        console.log (budget);
 
       };
 
@@ -14,7 +15,8 @@ angular.module("tbdModules.services")
 
 
     return{
-      getBudget : getBudget
+      getBudget : getBudget,
+      addBudget : addBudget
     }
 
 
