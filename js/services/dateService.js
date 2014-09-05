@@ -42,17 +42,21 @@ angular.module("tbdModules.services")
       console.log(gifts);
     };
 
-    var rsvp = [];
+    var rsvp = [
+    {text:'Mark Twain', done:true},         
+    {text: 'Sara Elizabeth', done:false},
+    {text: 'Sara Elizabeth', done:false},
+    {text: 'Sara Elizabeth', done:false},
+    {text: 'Sara Elizabeth', done:false},
+    {text: 'Sara Elizabeth', done:false}
+    ];
 
     var getRSVP = function (){
       return rsvp;
     };
 
     function rsvpCtrl($scope) {
-  $scope.rsvp = [
-    {text:'Mark Twain', done:true},         
-    {text: 'Sara Elizabeth', done:false}
-  ];
+    $scope.rsvp = [];
 };
 
 
