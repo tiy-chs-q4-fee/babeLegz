@@ -1,6 +1,10 @@
 <nav>
   <button ng-click="goToGifts()">Gifts Log</button>
+<<<<<<< HEAD
   <button ng-click="goToRSVP()">RSVP LIST</button>
+=======
+  <button ng-click="enterGift = !enterGift"><i class="fa fa-gift"></i></button>
+>>>>>>> 1646cfe88f9ed15591352c782f00c63f327f7504
 </nav>
 
 <div class="mainCont">
@@ -8,3 +12,11 @@
     <h1>{{grabMonth}}</h1>
   </div>
 </div>
+
+<form ng-show="enterGift">
+  <button ng-click="enterGift = !enterGift"><i class="fa fa-times"></i></button>
+  <input type="text" ng-model="newGift.name" placeholder="Enter Name">
+  <input type="text" ng-model="newGift.location" placeholder="Enter Address">
+  <input type="text" ng-model="newGift.description" placeholder="Enter Gift">
+  <button ng-click="createGift(newGift)">Add Gift</button>
+</form>

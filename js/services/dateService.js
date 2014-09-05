@@ -1,19 +1,19 @@
 angular.module("tbdModules.services")
   .factory("dateService", function(){
-    var date = [];
+    var myDate = [];
 
     var getDate = function() {
-      return date[0];
+      return myDate[0];
     };
-    var createDate = function(newDate){
-      date.unshift(newDate);
+    var createDate = function(newMyDate){
+      myDate.unshift(newMyDate);
     };
 
-    var monthCount = function(date){
-      console.log(date);
+    var monthCount = function(myDate){
+      console.log(myDate);
       var numMonths;
-      var year = Number(moment(date).utc().format('YYYY'));
-      var month= Number(moment(date).utc().format('MM'));
+      var year = Number(moment(myDate).utc().format('YYYY'));
+      var month= Number(moment(myDate).utc().format('MM'));
       var nowYear = Number(moment().utc().format('YYYY'));
       var nowMonth= Number(moment().utc().format('MM'));
       var diffYear = year - nowYear;
