@@ -33,8 +33,12 @@ angular.module("tbdModules.services")
 
     var gifts = [];
 
+    var getGifts = function() {
+      return gifts;
+    };
+
     var addGift = function (newGift) {
-      gifts.unshift(newGift);
+      gifts.push(newGift);
       console.log(gifts);
     };
 
@@ -43,6 +47,7 @@ angular.module("tbdModules.services")
       getDate: getDate,
       createDate: createDate,
       monthCount: monthCount,
+      getGifts: getGifts,
       addGift: addGift
     };
   });
