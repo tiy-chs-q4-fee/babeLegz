@@ -20,6 +20,10 @@ angular.module("tbdModules", ["tbdModules.controllers","tbdModules.services", "n
         templateUrl: "views/gifts.html",
         controller: "giftController"
       })
+      .when("/rsvp",{
+        templateUrl: "views/rsvp.html",
+        controller: "rsvpController"
+      })
       .otherwise({
         redirectTo: "/notFound"
       })

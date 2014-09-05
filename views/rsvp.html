@@ -1,0 +1,10 @@
+<h2>RSVP LIST</h2>
+<button ng-click="goToTimeline()">Timeline</button>
+  <div >
+   <ul>
+        <li ng-repeat="rsvp in rsvp">
+          <input type="checkbox" ng-model="rsvp.done"/>
+          <span class="done-{{rsvp.done}}">{{rsvp.text}}</span>
+        </li>
+      </ul>
+     </div>

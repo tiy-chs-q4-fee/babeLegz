@@ -4743,12 +4743,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/controllers\/min\/rsvpController-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/controllers\/min\/rsvpController-min.js",
+		"outputAbbreviatedPath": "\/js\/controllers\/min\/min\/rsvpController-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/controllers\/min\/timeController-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/controllers\/min\/timeController-min.js",
 		"outputAbbreviatedPath": "\/js\/controllers\/min\/min\/timeController-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/controllers\/rsvpController.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/controllers\/rsvpController.js",
+		"outputAbbreviatedPath": "\/js\/controllers\/min\/rsvpController-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -4885,6 +4907,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/views\/rsvp.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/rsvp.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/views\/timeline.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4897,12 +4928,12 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Chris Otten",
+"lastSavedByUser": "chinenyem nwadiugwu",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "babeLegz",
+	"displayValue": "bigDay",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "pencil_orange"
 	},
