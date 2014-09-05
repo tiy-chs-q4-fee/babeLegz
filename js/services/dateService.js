@@ -44,12 +44,9 @@ angular.module("tbdModules.services")
     };
 
     var rsvp = [
-    {text:'Mark Twain', done:true},
+    {text:'Mark Twain', done:false},
     {text: 'Sara Elizabeth', done:false},
-    {text: 'Sara Elizabeth', done:false},
-    {text: 'Sara Elizabeth', done:false},
-    {text: 'Sara Elizabeth', done:false},
-    {text: 'Sara Elizabeth', done:false}
+    {text: 'John Henry', done:false}
     ];
 
     var getRSVP = function (){
@@ -63,10 +60,22 @@ angular.module("tbdModules.services")
 
     var guest = [];
 
+     var getGuest = function() {
+      return guest;
+    };
+
     var addGuest = function (newGuest) {
     guest.push(newGuest);
+    guest.rsvpGuest='';
     console.log(newGuest);
   };
+
+  var deleteGuest = function (idx){
+    guest.splice(idx, 1);
+
+  };
+
+
 
 
     // return methods
@@ -78,6 +87,7 @@ angular.module("tbdModules.services")
       addGift: addGift,
       getRSVP: getRSVP,
       rsvpCtrl : rsvpCtrl,
+      getGuest : getGuest,
       addGuest : addGuest
     };
 
