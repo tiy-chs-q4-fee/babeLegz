@@ -3,12 +3,15 @@ angular.module("tbdModules.controllers")
 	$scope.rsvp = dateService.getRSVP();
 
 
-	$scope.createRSVP = function(rsvp){
+	$scope.createRSVP = function(rsvp, guest){
       dateService.addRSVP(rsvp);
       $scope.newRSVP = {};
+      dateService.addGuest(guest);
+      $scope.newGuest = {};
     };
 
-    
+   
+
 
     $scope.goToTimeline = function () {
     $location.path("/timeline");

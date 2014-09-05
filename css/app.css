@@ -6059,6 +6059,10 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+.done-true {
+  text-decoration: line-through;
+  color: #ddd; }
+
 img.bg {
   min-height: 100%;
   min-width: 100%;

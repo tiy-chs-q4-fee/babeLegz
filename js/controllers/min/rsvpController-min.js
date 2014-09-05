@@ -1,1 +1,1 @@
-angular.module("tbdModules.controllers").controller("rsvpController",function(e,n,o){e.rsvp=o.getRSVP(),e.createRSVP=function(n){o.addRSVP(n),e.newRSVP={}},e.goToTimeline=function(){n.path("/timeline")}});
+angular.module("tbdModules.controllers").controller("rsvpController",function(e,n,o){e.rsvp=o.getRSVP(),e.createRSVP=function(n,t){o.addRSVP(n),e.newRSVP={},o.addGuest(t),e.newGuest={}},e.goToTimeline=function(){n.path("/timeline")}});

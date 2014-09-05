@@ -32,6 +32,7 @@ angular.module("tbdModules.services")
     };
 
     var gifts = [];
+    
 
     var getGifts = function() {
       return gifts;
@@ -57,7 +58,15 @@ angular.module("tbdModules.services")
 
     function rsvpCtrl($scope) {
     $scope.rsvp = [];
-};
+    };
+
+
+    var guest = [];
+
+    var addGuest = function (newGuest) {
+    guest.push(newGuest);
+    console.log(newGuest);
+  };
 
 
     // return methods
@@ -68,7 +77,8 @@ angular.module("tbdModules.services")
       getGifts: getGifts,
       addGift: addGift,
       getRSVP: getRSVP,
-      rsvpCtrl : rsvpCtrl
+      rsvpCtrl : rsvpCtrl,
+      addGuest : addGuest
     };
 
     

@@ -5,6 +5,31 @@
         <li ng-repeat="rsvp in rsvp">
           <input type="checkbox" ng-model="rsvp.done"/>
           <span class="done-{{rsvp.done}}">{{rsvp.text}}</span>
+          <li>RSVP: {{guest.name}}</li>
         </li>
       </ul>
      </div>
+
+   <form>
+        <input class="add-input" placeholder="I need to..." type="text" ng-model="newGuest.name"/>
+        <button class="add-btn" ng-click="addGuest(newGuest)"><h2>RSVP</h2></button>
+   </form>
+
+
+
+
+   <!-- <div>
+    <form ng-show="enterGift">
+      <button ng-click="enterGift = !enterGift"><i class="fa fa-times"></i></button>
+      <input type="text" ng-model="newGift.name" placeholder="Enter Name">
+      <input type="text" ng-model="newGift.location" placeholder="Enter Address">
+      <input type="text" ng-model="newGift.description" placeholder="Enter Gift">
+      <button ng-click="createGift(newGift)">Add Gift</button>
+    </form>
+  </div>
+  <div ng-repeat="gift in gifts">
+    <h3>Name: {{gift.name}}</h3>
+    <p>Address: {{gift.location}}</p>
+    <p>Gift: {{gift.description}}</p>
+  </div>
+</div> -->
