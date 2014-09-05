@@ -1,0 +1,16 @@
+<button ng-click="goToTimeline()">Timeline</button>
+<div>
+  <div>
+    <form>
+      <input type="text" ng-model="newGift.name" placeholder="Enter Name">
+      <input type="text" ng-model="newGift.location" placeholder="Enter Address">
+      <input type="text" ng-model="newGift.description" placeholder="Enter Gift">
+      <button ng-click="createGift(newGift)">Add Gift</button>
+    </form>
+  </div>
+  <div ng-repeat="gift in gifts">
+    <h3>Name: {{gift.name}}</h3>
+    <p>Address: {{gift.location}}</p>
+    <p>Gift: {{gift.description}}</p>
+  </div>
+</div>

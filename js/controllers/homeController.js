@@ -5,4 +5,4 @@ angular.module("tbdModules.controllers")
       dateService.createDate(date)
       $location.path("/timeline")
     }
-  })
+  });
