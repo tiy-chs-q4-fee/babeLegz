@@ -1,1 +1,0 @@
-angular.module("tbdModules.controllers").controller("homeController",function(o,e,t){o.notFound="404",o.addDate=function(o){t.createDate(o),e.path("/timeline")}});
