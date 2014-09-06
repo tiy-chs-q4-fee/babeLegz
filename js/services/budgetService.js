@@ -21,6 +21,7 @@ angular.module("tbdModules.services")
         budget.expense.push(expItem);
         spent += expItem.price;
         budget.left = budget.total - spent;
+        budget.spent = spent;
 
 
 
