@@ -11,7 +11,7 @@
 </header>
 <div>
   <div>
-    <form ng-show="enterGift">
+    <form ng-hide="enterGift">
       <button ng-click="enterGift = !enterGift"><i class="fa fa-times"></i></button>
       <input type="text" ng-model="newGift.name" placeholder="Enter Name">
       <input type="text" ng-model="newGift.location" placeholder="Enter Address">
