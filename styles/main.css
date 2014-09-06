@@ -1,3 +1,6 @@
+input[type=checkbox] {
+  visibility: hidden; }
+
 .slideOne {
   width: 50px;
   height: 10px;
