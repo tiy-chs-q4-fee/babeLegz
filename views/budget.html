@@ -1,6 +1,21 @@
+<header>
+  <nav>
+    <ul>
+      <li><a href="#/timeline">TIMELINE</a></li>
+      <li><a href="#/gifts">GIFTS</a></li>
+      <li><span class="bigHead">THE BIG DAY</span> </li>
+      <li><a href="#/rsvp">RSVP</a></li>
+      <li><strong><a href="#/budget">BUDGET</a></strong></li>
+    </ul>
+  </nav>
+</header>
 <div class="budgetPage">
-  <h1>The Big Budget</h1>
-  <section>
+  <form action="" ng-hide="budgetSubmitted">
+    <h3>What is your total budget?</h3>
+    <input type="number" ng-model="newBudget.total" required>
+    <button ng-click="createBudget(newBudget.total); budgetSubmitted=!budgetSubmitted">Submit</button>
+  </form>
+  <section ng-show="budgetSubmitted">
   <h3>Your total wedding budget: ${{budget.total}}</h3>
   <h3>What you have left: ${{budget.left}}</h3>
 
@@ -10,12 +25,7 @@
   </ul>
   </section>
 
-  <aside>
-    <form action="">
-      <h3>What is your total budget?</h3>
-      <input type="number" ng-model="newBudget.total">
-      <button ng-click="createBudget(newBudget.total)">Submit</button>
-    </form>
+  <aside ng-show="budgetSubmitted">
     <form action="">
       <h3>What have you purchased so far?</h3>
       <h3>Item:</h3>
