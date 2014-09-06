@@ -7,6 +7,15 @@ angular.module("tbdModules.controllers")
       $scope.budget = budgetService.getBudget();
       $scope.newBudget = {};
     };
+    $scope.refactorBudget = function(c){
+      budgetService.updateBudget(c);
+
+    };
+    $scope.addExp = function(d){
+      budgetService.addingExpense(d);
+      $scope.newExpense = {};
+
+    }
 
 
   });
