@@ -116,6 +116,16 @@ h2 {
   font-size: 1em; }
 .budgetPage .initialBQ {
   text-align: center; }
+.budgetPage p {
+  padding: 0;
+  margin: 0; }
+.budgetPage hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent); }
 
 h3 {
   font-size: 1.5em;
