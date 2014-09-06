@@ -69,38 +69,56 @@ h2 {
   margin: 0;
   padding: 0; }
 
-.budgetPage h1 {
+.budgetPage .budChart {
+  background-color: rgba(249, 227, 205, 0.7);
+  width: 64%;
+  margin-left: 18%;
   font-family: 'Oswald', sans-serif;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 4em;
+  font-weight: 300;
+  font-size: 1.2em;
+  border-radius: 5px; }
+  .budgetPage .budChart .expenseItem {
+    text-align: left;
+    width: 57%;
+    display: inline-block;
+    margin-left: 2%; }
+  .budgetPage .budChart .expensePrice {
+    text-align: right;
+    width: 40%;
+    display: inline-block; }
+.budgetPage form {
+  margin-left: 2%; }
+.budgetPage h2 {
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+.budgetPage .expenseForm {
   text-align: center; }
 .budgetPage h3 {
-  font-size: 2em;
-  font-family: 'Oswald', sans-serif;
-  color: white;
-  text-align: left; }
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
 .budgetPage li {
   font-family: 'Oswald', sans-serif;
   color: white;
   font-size: 1.5em; }
-.budgetPage section {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 7%; }
-.budgetPage aside {
-  width: 30%;
-  display: inline-block;
-  margin-right: 7%; }
 .budgetPage button {
   background-color: #f9e3cd;
   border: none;
   font-family: 'Oswald', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 1em; }
+.budgetPage input {
+  font-size: 1em; }
+.budgetPage .initialBQ {
+  text-align: center; }
 
 h3 {
   font-size: 1.5em;
-  text-align: center;
   font-family: 'Oswald', sans-serif;
   color: white;
   font-weight: 300; }
