@@ -1,16 +1,9 @@
 angular.module("tbdModules.services")
   .factory("budgetService", function(){
       var budget={
-        total:10000,
-        left:7500,
-        expense:[{
-          item:"Wedding Dress",
-          price:2000,
-        },
-        {
-          item:"Tux",
-          price:500,
-        }]
+        total:0,
+        left:0,
+        expense:[]
       };
 
       var getBudget = function(){
@@ -18,20 +11,27 @@ angular.module("tbdModules.services")
         return budget;
       };
       var addBudget = function (amount) {
-        budget = amount;
+        budget.total = amount;
 
-        console.log(budget);
+
+
+      };
+      var spent = 0;
+      var addingExpense = function (expItem){
+        budget.expense.push(expItem);
+        spent += expItem.price;
+        budget.left = budget.total - spent;
+        budget.spent = spent;
 
 
 
       };
 
 
-
-
     return{
       getBudget : getBudget,
-      addBudget : addBudget
+      addBudget : addBudget,
+      addingExpense : addingExpense
     }
 
 

@@ -12,6 +12,7 @@ angular.module("tbdModules.controllers")
 
     $scope.createGift = function(gift){
       dateService.addGift(gift);
+      dateService.getGift(gift);
       $scope.newGift = {};
     };
 

@@ -1,60 +1,50 @@
-input[type=checkbox] {
-  visibility: hidden;
+$offwhite: #F9E3CD;
+
+body{
+  background-image: url(../images/tbdBG.png);
+  background-size:100%;
+  margin:0;
+  padding:0;
 }
-
-
-.slideOne {
-  width: 50px;
-  height: 10px;
-  background: #333;
-  margin: 20px auto;
-
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  position: relative;
-
-  -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
-  -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
-  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+.container{
+  width:100%;
+  margin:0;
+  padding:0;
 }
-
-.slideOne label {
-  display: block;
-  width: 16px;
-  height: 16px;
-
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  transition: all .4s ease;
-  cursor: pointer;
-  position: absolute;
-  top: -3px;
-  left: -3px;
-
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
-  background: #fcfff4;
-
-  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+header{
+  width:100%;
+  font-family: 'Oswald', sans-serif;
+  margin:0;
+  padding:0;
+  text-align:center;
+  ul{
+    margin:0;
+    padding:0;
+  }
+  li{
+    display:inline-block;
+    list-style:none;
+    font-size:2em;
+    text-align:center;
+    font-weight:300;
+    vertical-align:middle;
+    margin: 0 1%;
+  }
+  a{
+    text-decoration:none;
+    color:$offwhite;
+  }
+  h1{
+    margin:0;
+    padding:0;
+    font-size:3em;
+    font-weight:300;
+  }
+  .bigHead{
+    font-size:2em;
+    vertical-align:middle;
+  }
 }
-
-.slideOne input[type=checkbox]:checked + label {
-  left: 37px;
-}
-
 
 
 form{
@@ -76,60 +66,90 @@ h2{
   color:white;
 }
 
-li{
-  color:white;
-}
-
-
 .done-true {
   text-decoration: line-through;
   color: #ddd;
 }
 
-
-img.bg {
-  min-height: 100%;
-  min-width: 100%;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index:-1;
-  }
-
+.header{
+  text-align:center;
+  margin-top:9%;
+}
 .headerTitle {
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight:300;
     font-size:100px;
-    text-align:center;
-    margin-top:10%;
+    margin:0;
+    padding:0;
 }
 
 .budgetPage{
-  h1 {
-    font-family:'Oswald', sans-serif;
-    color:rgba(255,255,255,.7);
-    font-size:4em;
+  .budChart{
+    background-color:rgba(249,227,205, 0.7);
+    width:64%;
+    margin-left:18%;
+    font-family: 'Oswald', sans-serif;
+    font-weight:300;
+    font-size:1.2em;
+    border-radius:5px;
+    .expenseItem{
+      text-align:left;
+      width:57%;
+      display:inline-block;
+      margin-left:2%
+    }
+    .expensePrice{
+      text-align:right;
+      width:40%;
+      display:inline-block;
+    }
+  }
+  form{
+    margin-left:2%;
+  }
+  h2 {
+      font-size:2.5em;
+      font-family: 'Oswald', sans-serif;
+      font-weight:300;
+      color:white;
+      margin:0;
+      padding:0;
+      text-align:center;
+  }
+  .expenseForm{
     text-align:center;
   }
-  h3 {
-      font-size:1.5em;
-      font-family: 'Oswald', sans-serif;
-      color:rgba(255,255,255,.7);
+  h3{
+    display:inline-block;
+    margin:0;
+    padding:0;
   }
   li{
     font-family: 'Oswald', sans-serif;
-    color:rgba(255,255,255,.7);
+    color:white;
+    font-size:1.5em;
+  }
+  button{
+    background-color:$offwhite;
+    border:none;
+    font-family: 'Oswald', sans-serif;
+    font-weight:300;
+    font-size:1em;
+  }
+  input{
+    font-size:1em;
+  }
+  .initialBQ{
+    text-align:center;
   }
 }
 
 h3 {
     font-size:1.5em;
-    text-align:center;
     font-family: 'Oswald', sans-serif;
     color: white;
+    font-weight:300;
 }
 .dateForm {
     text-align:center;

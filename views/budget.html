@@ -1,23 +1,42 @@
+<header>
+  <nav>
+    <ul>
+      <li><a href="#/timeline">TIMELINE</a></li>
+      <li><a href="#/gifts">GIFTS</a></li>
+      <li><span class="bigHead">THE BIG DAY</span> </li>
+      <li><a href="#/rsvp">RSVP</a></li>
+      <li><strong><a href="#/budget">BUDGET</a></strong></li>
+    </ul>
+  </nav>
+</header>
 <div class="budgetPage">
-  <h1>The Big Budget</h1>
-  <h3>Your total wedding budget: {{budget.total}}</h3>
-  <h3>What you have left: {{budget.left}}</h3>
+    <form class="initialBQ" action="" ng-hide="budgetSubmitted">
+      <h3>What is your total budget?</h3><br>
+      <input type="number" ng-model="newBudget.total" required>
+      <button ng-click="createBudget(newBudget.total); budgetSubmitted=!budgetSubmitted">Submit</button>
+    </form>
+    <div class="budChart" ng-show="budgetSubmitted">
+    <h3 class="expenseItem">Total Budget: ${{budget.total}}</h3>
+    <h3 class="expensePrice">Left To Spend: ${{budget.left}}</h3>
 
-  <h3>Purchases:</h3>
-  <ul ng-repeat="expense in budget.expense">
-    <li>{{expense.item}} - {{expense.price}}</li>
-  </ul>
+    <h2>Expenditures</h2>
+    <hr>
+    <div class="chart" ng-repeat="expense in budget.expense">
+      <div class="expenseItem"><p>{{expense.item}}</p></div>
+      <div class="expensePrice"><p>${{expense.price}}</p></div>
+      <hr>
+    </div>
+    <h3 class="expenseItem">Total Spent:</h3>
+    <h3 class="expensePrice">${{budget.spent}}</h3>
+    <br>
+      <form class="expenseForm" action="">
+        <h3>Item:</h3>
+        <input type="text" ng-model="newExpense.item" required>
+        <h3>Price:</h3>
+        <input type="number" ng-model="newExpense.price" required>
+        <button ng-click="addExp(newExpense)">Add Expense</button>
+      </form>
 
-  <form action="">
-  <h3>What is your total budget?</h3>
-  <input type="number" ng-model="newBudget.total">
-  <button ng-click="createBudget(newBudget)">Submit</button>
-  <h3>What have you purchased so far?</h3>
-  <h3>Item:</h3>
-  <input type="text" ng-click="newBudget.expense.item">
-  <h3>Price:</h3>
-  <input type="number" ng-click="newBudget.expense.price">
-  <button ng-click="refactorBudget(newBudget.expense)">Add Expense</button>
+  </div>
 
-</form>
 </div>
