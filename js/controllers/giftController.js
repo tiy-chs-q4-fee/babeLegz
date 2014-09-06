@@ -5,6 +5,9 @@ angular.module("tbdModules.controllers")
       dateService.addGift(gift);
       $scope.newGift = {};
     };
+
+    
+
     $scope.goToTimeline = function () {
     $location.path("/timeline");
     };

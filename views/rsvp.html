@@ -15,6 +15,7 @@
 
   <form>
         <input class="add-input" placeholder="Guest Invited" type="text" ng-model="newGuest.name"/>
+         <input class="add-input" placeholder="Date" type="text" ng-model="newGuest.date"/>
         <button class="add-btn" ng-click="createGuest(newGuest)"><h2>RSVP</h2></button>
    </form>
 
@@ -24,6 +25,8 @@
      <input type="checkbox"  ng-model="guest.done"/>
     <label for="slideOne"></label>
       <span ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor"> RSVP: {{guest.name}}</span>
+      <span ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor"> Date {{guest.date}}</span>
+      <input type="checkbox"  ng-model="guest.done"/>
         <button ng-click="removeRSVP=!removeRSVP">NOT COMING</button>
   </div>
  </form>
