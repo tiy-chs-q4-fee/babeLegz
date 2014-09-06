@@ -1,48 +1,70 @@
 angular.module("tbdModules.services")
   .factory("timelineService", function(){
 
-    var sixteenNineMonths =
-    [
+    var monthsUntilWedding;
+
+    var getDaysUntilWedding = function() {
+
+      return monthsUntilWedding;
+    };
+
+    var setWeddingDate = function(weddingDate){
+        var myWeddingDate = new Date(weddingDate);
+        myWeddingDate = myWeddingDate.getTime();
+        var currentDate = new Date();
+        currentDate = currentDate.getTime();
+        timeUntilWeddingDay = myWeddingDate - currentDate;
+        monthsUntilWedding = timeUntilWeddingDay/(1000*60*60*24*30);
+        monthsUntilWedding = Math.floor(monthsUntilWedding);
+    };
+
+    var nineToSixteenMonths = [
       {
         title: "Work out your budget",
         completed: false,
         note:"Determine how much you have to spend, based on your families’ contributions and your own."
       },
+
       {
         title: "Pick your wedding party",
         completed: false,
         note:"As soon as you’re engaged, people will start wondering who’s in."
       },
+
       {
         title:"Start the guest list",
         completed: false,
         note:"Make a head count database to use throughout your planning process, with columns for contact info, RSVPs, gifts, and any other relevant information."
       },
+
       {
         title: "Reserve your date and venues",
         completed: false,
         note: "Decide whether to have separate locations for the ceremony and the reception, factoring in travel time between the two places."
       },
+
       {
         title: "Book your officiant",
         completed: false,
 
         note:""
       },
+
       {
         title: "Do some research",
         completed: false,
         note: "Research photographers, bands, florists, and caterers."
       },
+
       {
         title: "Throw an engagement party",
         completed:false,
         note: "Remember that your invitees should be on your wedding guest list as well."
-      },
-    ]
+      }
+    ];
 
-    var eightMonths =
-    [
+
+    var eightMonths = [
       {
         title:"Hire the photographer and the videographer",
         completed:false,
@@ -73,10 +95,9 @@ angular.module("tbdModules.services")
         completed:false,
         note:"Sign up at a minimum of three retailers."
       },
-    ]
+    ];
 
-    var sevenSixMonths =
-    [
+    var sixToSevenMonths = [
       {
         title:"Select and purchase invitations",
         completed:false,
@@ -117,10 +138,9 @@ angular.module("tbdModules.services")
         completed:false,
         note:"Draw up a schedule of the event and slot in each component (the cake-cutting, the first dance)."
       },
-    ]
+    ];
 
-    var fiveFourMonths =
-    [
+    var fourToFiveMonths = [
       {
         title:"Book the rehearsal and rehearsal-dinner venues",
         completed:false,
@@ -156,9 +176,9 @@ angular.module("tbdModules.services")
         completed:false,
         note:"What should be playing when the wedding party is announced? During dinner? To kick off the dancing? Keep a running list of what you want—and do not want—played."
       },
-    ]
-    var threeMonths =
-    [
+    ];
+
+    var threeMonths = [
       {
         title:"Finalize the menu and flowers",
         completed:false,
@@ -195,10 +215,9 @@ angular.module("tbdModules.services")
         note:"Giving them a first draft now allows ample time for tweaks and feedback."
       }
 
-    ]
+    ];
 
-    var twoMonths =
-    [
+    var twoMonths = [
       {
         title:"Touch base again with all the vendors",
         completed:false,
@@ -219,10 +238,9 @@ angular.module("tbdModules.services")
         completed:false,
         note:"Arranging a night out with your girlfriends generally falls to the maid of honor. But if she hasn’t mentioned one to you by now, feel free to ask—for scheduling purposes, of course!—if a celebration is in the works."
       }
-    ]
+    ];
 
-    var oneMonth =
-    [
+    var oneMonth = [
       {
         title:"Enter RSVPs into your guest-list database",
         completed:false,
@@ -327,10 +345,58 @@ angular.module("tbdModules.services")
         title:"Pack for your honeymoon",
         completed:false,
         note:"",
-      },
-    ]
+      }
+    ];
 
-    //return methods
+
+
+    var getNineToSixteenMonths = function () {
+      return nineToSixteenMonths;
+    };
+
+    var getEightMonths = function () {
+      return eightMonths;
+    };
+
+    var getSixToSevenMonths = function () {
+      return sixToSevenMonths;
+    };
+
+    var getFourToFiveMonths = function () {
+      return fourToFiveMonths;
+    };
+
+    var getThreeMonths = function () {
+      return threeMonths;
+    };
+
+    var getTwoMonths = function () {
+      return twoMonths;
+    };
+
+    var getOneMonth = function () {
+      return oneMonth;
+    };
+
+
+
+
+    // return methods
+    
+    return {
+      setWeddingDate : setWeddingDate,
+      getDaysUntilWedding : getDaysUntilWedding,
+      getNineToSixteenMonths : getNineToSixteenMonths,
+      getEightMonths : getEightMonths,
+      getSixToSevenMonths : getSixToSevenMonths,
+      getFourToFiveMonths : getFourToFiveMonths,
+      getThreeMonths : getThreeMonths,
+      getTwoMonths : getTwoMonths,
+      getOneMonth : getOneMonth
+    };
+
+
+
 
 
   });
