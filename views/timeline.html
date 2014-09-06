@@ -6,14 +6,82 @@
 
 <div class="mainCont">
   <div class="dispDate">
-    <h1>{{grabDate}} days until your big day!</h1>
+    <h1>{{grabDate}} months until your big day!</h1>
   </div>
 </div>
 
-<form ng-show="enterGift">
-  <button ng-click="enterGift = !enterGift"><i class="fa fa-times"></i></button>
-  <input type="text" ng-model="newGift.name" placeholder="Enter Name">
-  <input type="text" ng-model="newGift.location" placeholder="Enter Address">
-  <input type="text" ng-model="newGift.description" placeholder="Enter Gift">
-  <button ng-click="createGift(newGift)">Add Gift</button>
-</form>
+<div class="timelineContainer">
+
+  <div class="9-16Months">
+    <h1>Nine to Sixteen Months Out</h1>
+    <ul class="timeline" ng-repeat="event in nineToSixteenMonths">
+      <li class="">
+        <input type="checkbox" ng-model="event.completed">
+        <h2>{{event.title}}</h2>
+        <p>{{event.note}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="8Months">
+    <h1>Eight Months Out</h1>
+    <ul class="timeline" ng-repeat="event in eightMonths">
+      <li class="">
+        <h2>{{event.title}}</h2>
+        <p>{{event.note}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="6-7Months">
+    <h1>Six to Seven Months Out</h1>
+    <ul class="timeline" ng-repeat="event in sixToSevenMonths">
+      <li class="">
+        <h2>{{event.title}}</h2>
+        <p>{{event.note}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="4-5Months">
+    
+    <h1>Four to Five Months Out</h1>
+    <ul class="timeline" ng-repeat="event in fourToFiveMonths">
+      <li class="">
+        <h2>{{event.title}}</h2>
+        <p>{{event.note}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="3Months">
+    <h1>Three Months Out</h1>
+    <ul class="timeline" ng-repeat="event in threeMonths">
+      <li class="">
+        <h2>{{event.title}}</h2>
+        <p>{{event.note}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="2Months">
+    <h1>Two Months Out</h1>
+    <ul class="timeline" ng-repeat="event in twoMonths">
+      <li class="">
+        <h2>{{event.title}}</h2>
+        <p>{{event.note}}</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="1Months">
+    <h1>One Month Out</h1>
+    <ul class="timeline" ng-repeat="event in oneMonth">
+      <li class="">
+        <h2>{{event.title}}</h2>
+        <p>{{event.note}}</p>
+      </li>
+    </ul>
+  </div>
+
+</div>
