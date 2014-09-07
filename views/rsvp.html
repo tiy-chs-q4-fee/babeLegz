@@ -1,3 +1,4 @@
+
 <header>
   <nav>
     <ul>
@@ -20,27 +21,30 @@
         <input id="basic-slide" class="add-input" placeholder="Your Name" type="text" ng-model="newGuest.name"/>
 
         <input  class="add-input" id="basic-slide"  type="text" placeholder="Your Guest's name" ng-model="newGuest.extraguest" />
-        <button id="buttonwrsvp" class="add-btn" ng-click="createGuest(newGuest)"><i class="fa fa-spinner fa-spin fa-4x"></i></button>
+        <button id="buttonwrsvp" class="add-btn" ng-click="createGuest(newGuest)"><i class="fa fa-circle-o-notch fa-spin fa-4x"></i></button>
    </form>
 
   
    
 
 
- <form >
-  <div ng-repeat="guest in guests = (guests | filter: query)">
-  <button  class="largebtn" ng-click="deleteGuest(newGuest)"> Delete Post </button>
-     <input type="checkbox"  ng-model="guest.done" ng-hide="removeRSVP" />
+ <form class="stylethersvpform" >
+  <div ng-repeat="guest in guests = (guests | filter: query)" class="stylersvpclass" id="listcolor">
+     <input type="checkbox"  ng-model="guest.done" ng-hide="removeRSVP" id="listcolor"> RSVP Checked</input>
 
-      <span ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor"> NAME {{guest.name}} </span>
-   <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Reserved on {{guest.date | date: format : timezone}}</p>
-   <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Plus 1: {{guest.extraguest}}</p>
-   <span ng-hide="removeRSVP"> <input type="checkbox" ng-model="value2" 
+ <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Reserved on {{guest.date | date: format : timezone}}</p>
+      <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor"> NAME {{guest.name}} </p>
+  
+   <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Plus 1: {{guest.extraguest}}
+
+    <br>
+
+   <span ng-hide="removeRSVP" > <input type="checkbox" ng-model="value2" 
                  ng-true-value="NO" ng-false-value="YES" >
-                 <tt>RSVP = {{value2}} </tt> <br/> </span>
+                 <tt>Children attending = {{value2}} </tt> <br/> </span></p>
 
-      <span ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">  </spa>
-        <button ng-click="removeRSVP=!removeRSVP">NOT COMING</button>
+      <span ng-hide="removeRSVP" class="done-{{guest.done}}" >  </spa>
+        <!-- <button ng-click="removeRSVP=!removeRSVP">NOT COMING</button> -->
   </div>
  </form>
 

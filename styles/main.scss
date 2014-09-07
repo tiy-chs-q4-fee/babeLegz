@@ -2,6 +2,7 @@ $offwhite: #F9E3CD;
 
 
 
+
 #buttonwrsvp{
 border-radius: 33%;
 background-color: white;
@@ -12,9 +13,9 @@ border: none;
 #basic-slide {
   font-size: 24px;
   display: inline-block;
-  width: 215px;
+  width: 326px;
   padding: 10px 0 10px 15px;
-  font-family: "Open Sans", sans;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   color: #377D6A;
   background: #efefef;
@@ -104,8 +105,16 @@ ul{
   list-style: none;
 }
 
+tt {
+font-family: ' Oswald', sans-serif;
+font-size: 20px;
+font-weight: 300;
+}
+
 #listcolor{
-  color: white;
+  font-family: ' Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 body {
@@ -117,7 +126,7 @@ h2{
 
 .done-true {
   text-decoration: line-through;
-  color: #ddd;
+  color: red;
 }
 
 .header{
