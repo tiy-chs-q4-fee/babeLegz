@@ -1,3 +1,8 @@
+#buttonwrsvp {
+  border-radius: 33%;
+  background-color: white;
+  border: none; }
+
 #basic-slide {
   font-size: 24px;
   display: inline-block;

@@ -9,44 +9,35 @@
     </ul>
   </nav>
 </header>
-<div>
-<h3>RSVP LIST</h3>
-<h3>Total Reserved Guest:</h3>
-{{getTotalTodos()}}
-</div>
+
 
 
 
 
   <form>
-        <input id="basic-slide" class="add-input" placeholder="Guest Invited" type="text" ng-model="newGuest.name"/>
-        
+  <h3>RSVP LIST</h3>
+<h3>Total Reserved Guest: {{guests.length}}</h3>
+        <input id="basic-slide" class="add-input" placeholder="Your Name" type="text" ng-model="newGuest.name"/>
 
-
-<input  class="add-input" id="basic-slide"  type="text" placeholder="Your best name" ng-model="newGuest.extraguest" />
-
-        <button class="add-btn" ng-click="createGuest(newGuest)"><i class="fa fa-spinner fa-spin fa-4x"></i></button>
+        <input  class="add-input" id="basic-slide"  type="text" placeholder="Your Guest's name" ng-model="newGuest.extraguest" />
+        <button id="buttonwrsvp" class="add-btn" ng-click="createGuest(newGuest)"><i class="fa fa-spinner fa-spin fa-4x"></i></button>
    </form>
 
-   
   
    
 
 
  <form >
-  <div ng-repeat="guest in guests" >
+  <div ng-repeat="guest in guests = (guests | filter: query)">
+  <button  class="largebtn" ng-click="deleteGuest(newGuest)"> Delete Post </button>
      <input type="checkbox"  ng-model="guest.done" ng-hide="removeRSVP" />
 
       <span ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor"> NAME {{guest.name}} </span>
    <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Reserved on {{guest.date | date: format : timezone}}</p>
    <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Plus 1: {{guest.extraguest}}</p>
-   <input type="checkbox" ng-model="value2"
-                 ng-true-value="NO" ng-false-value="YES">
-                 <tt>RSVP = {{value2}}</tt><br/>
-
-
-   
-   <!-- <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Plus 1: {{guest.length}}</p> -->
+   <span ng-hide="removeRSVP"> <input type="checkbox" ng-model="value2" 
+                 ng-true-value="NO" ng-false-value="YES" >
+                 <tt>RSVP = {{value2}} </tt> <br/> </span>
 
       <span ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">  </spa>
         <button ng-click="removeRSVP=!removeRSVP">NOT COMING</button>
@@ -59,7 +50,7 @@
 
 
 
-<div >
+<!-- <div >
    <ul>
         <li ng-repeat="rsvp in rsvp">
           <input type="checkbox" ng-model="rsvp.done"/>
@@ -68,4 +59,4 @@
           <button ng-click="removeRSVP=!removeRSVP" >NOT COMING</button>
         </li>
       </ul>
-     </div>
+     </div> -->

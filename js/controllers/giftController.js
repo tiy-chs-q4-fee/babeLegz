@@ -1,8 +1,8 @@
 angular.module("tbdModules.controllers")
-  .controller("giftController", function($scope, $location, dateService){
-    $scope.gifts = dateService.getGifts();
+  .controller("giftController", function($scope, $location, giftService){
+    $scope.gifts = giftService.getGifts();
     $scope.createGift = function(gift){
-      dateService.addGift(gift);
+      giftService.addGift(gift);
       $scope.newGift = {};
     };
 
