@@ -16,78 +16,72 @@
   </div>
 </div>
 
-<div class="timelineContainer">
+<ul class="timeline">
 
-  <div class="9-16Months">
-    <h1>Nine to Sixteen Months Out</h1>
-    <ul class="timeline" ng-repeat="event in nineToSixteenMonths">
-      <li class="">
-        <input type="checkbox" ng-model="event.completed">
-        <h2>{{event.title}}</h2>
-        <p>{{event.note}}</p>
-      </li>
-    </ul>
-  </div>
-
-  <div class="8Months">
-    <h1>Eight Months Out</h1>
-    <ul class="timeline" ng-repeat="event in eightMonths">
-      <li class="">
-        <h2>{{event.title}}</h2>
-        <p>{{event.note}}</p>
-      </li>
-    </ul>
-  </div>
-
-  <div class="6-7Months">
-    <h1>Six to Seven Months Out</h1>
-    <ul class="timeline" ng-repeat="event in sixToSevenMonths">
-      <li class="">
-        <h2>{{event.title}}</h2>
-        <p>{{event.note}}</p>
-      </li>
-    </ul>
-  </div>
-
-  <div class="4-5Months">
+    <!-- this is the first set of events -->
+    <li class="year first">
+      <h4>Nine to Sixteen Months Out</h4>
+    </li>
+    <li class="event" ng-repeat="event in nineToSixteenMonths" ng-click="done = !done" ng-hide="done">
+      <h2 class="event-title">{{event.title}}</h2>
+      <p class="event-note">{{event.note}}</p>
+    </li>
     
-    <h1>Four to Five Months Out</h1>
-    <ul class="timeline" ng-repeat="event in fourToFiveMonths">
-      <li class="">
-        <h2>{{event.title}}</h2>
-        <p>{{event.note}}</p>
-      </li>
-    </ul>
-  </div>
+    <!-- this is the second set of events -->
+    <li class="year">
+      <h4>Eight Months Out</h4>
+    </li>
+    <li class="event" ng-repeat="event in eightMonths">
+      <h2 class="event-title">{{event.title}}</h2>
+      <p class="event-note">{{event.note}}</p>
+    </li>
 
-  <div class="3Months">
-    <h1>Three Months Out</h1>
-    <ul class="timeline" ng-repeat="event in threeMonths">
-      <li class="">
-        <h2>{{event.title}}</h2>
-        <p>{{event.note}}</p>
-      </li>
-    </ul>
-  </div>
+    <!-- this is the third set of events -->
+    <li class="year">
+      <h4>Six to Seven Months Out</h4>
+    </li>
+    <li class="event" ng-repeat="event in sixToSevenMonths">
+      <h2 class="event-title">{{event.title}}</h2>
+      <p class="event-note">{{event.note}}</p>
+    </li>
 
-  <div class="2Months">
-    <h1>Two Months Out</h1>
-    <ul class="timeline" ng-repeat="event in twoMonths">
-      <li class="">
-        <h2>{{event.title}}</h2>
-        <p>{{event.note}}</p>
-      </li>
-    </ul>
-  </div>
+    <!-- this is the fourth set of events -->
+    <li class="year">
+      <h4>Four to Five Months Out</h4>
+    </li>
+    <li class="event" ng-repeat="event in fourToFiveMonths">
+      <h2 class="event-title">{{event.title}}</h2>
+      <p class="event-note">{{event.note}}</p>
+    </li>
 
-  <div class="1Months">
-    <h1>One Month Out</h1>
-    <ul class="timeline" ng-repeat="event in oneMonth">
-      <li class="">
-        <h2>{{event.title}}</h2>
-        <p>{{event.note}}</p>
-      </li>
-    </ul>
-  </div>
+    <!-- this is the fifth set of events -->
+    <li class="year">
+      <h4>Three Months Out</h4>
+    </li>
+    <!-- ng-repeat through the events -->
+    <li class="event" ng-repeat="event in threeMonths">
+      <h2 class="event-title">{{event.title}}</h2>
+      <p class="event-note">{{event.note}}</p>
+    </li>
 
-</div>
+
+    <!-- this is the sixth set of data -->
+    <li class="year">
+      <h4>Two Months Out</h4>
+    </li>
+    <!-- ng-repeat through the events -->
+    <li class="event" ng-repeat="event in twoMonths">
+      <h2 class="event-title">{{event.title}}</h2>
+      <p class="event-note">{{event.note}}</p>
+    </li>
+
+  
+    <li class="year">
+      <h4>One Month Out</h4>
+    </li>
+      <li class="event" ng-repeat="event in oneMonth">
+        <h2 class="event-title">{{event.title}}</h2>
+        <p class="event-note">{{event.note}}</p>
+      </li>
+
+</ul>
