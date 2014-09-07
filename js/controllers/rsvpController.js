@@ -10,10 +10,16 @@ angular.module("tbdModules.controllers")
     $scope.createGuest = function(guest){
       dateService.addGuest(guest);
       $scope.newGuest = {};
+      $scope.guest={};
+      
     };
 
 
     $scope.guests = dateService.getGuest();
+    $scope.newGuests = dateService.getTotalTodos();
+   
+    $scope.value2 = 'YES'
+
 
     $scope.goToTimeline = function () {
     $location.path("/timeline");

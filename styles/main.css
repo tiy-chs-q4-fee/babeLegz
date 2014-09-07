@@ -1,3 +1,36 @@
+#basic-slide {
+  font-size: 24px;
+  display: inline-block;
+  width: 215px;
+  padding: 10px 0 10px 15px;
+  font-family: "Open Sans", sans;
+  font-weight: 400;
+  color: #377D6A;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 70px;
+  transition: all .3s ease-in-out; }
+  #basic-slide::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300; }
+
+#basic-slide:focus,
+#basic-slide:active {
+  color: #377D6A;
+  text-indent: 0;
+  background: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+  #basic-slide:focus::-webkit-input-placeholder,
+  #basic-slide:active::-webkit-input-placeholder {
+    color: #aaa; }
+  #basic-slide:focus + label,
+  #basic-slide:active + label {
+    transform: translateX(-100%); }
+
 body {
   background-image: url(../images/tbdBG.png);
   background-size: 100%;
@@ -28,7 +61,7 @@ header {
     margin: 0 1%; }
   header a {
     text-decoration: none;
-    color: #f9e3cd; }
+    color: #F9E3CD; }
   header h1 {
     margin: 0;
     padding: 0;
@@ -107,7 +140,7 @@ h2 {
   color: white;
   font-size: 1.5em; }
 .budgetPage button {
-  background-color: #f9e3cd;
+  background-color: #F9E3CD;
   border: none;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -154,18 +187,4 @@ h3 {
   .dateForm .subButt:hover {
     background-color: #008cba; }
 
-.slideOne {
-  width: 50px;
-  height: 10px;
-  background: #333;
-  margin: 20px auto;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  position: relative;
-  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2); }
-
-.slideOne input[type=checkbox]:checked + label {
-  left: 37px; }
+/*# sourceMappingURL=main.css.map */

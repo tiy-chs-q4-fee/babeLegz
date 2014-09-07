@@ -32,7 +32,7 @@ angular.module("tbdModules.services")
     };
 
     var rsvp = [
-    {text: 'Mark Twain', done:true},
+    {text: 'Mark Twain', done:false, date: new Date()},
     {text: 'Sara Elizabeth', done:false},
     {text: 'John Henry', done:false}
     ];
@@ -47,21 +47,33 @@ angular.module("tbdModules.services")
 
 
     var guest = [];
+   
+
+    var getTotalTodos = function () {
+    return guest.length;
+  };
 
      var getGuest = function() {
       return guest;
     };
 
+  
+
+
     var addGuest = function (newGuest) {
-    guest.push(newGuest);
+    guest.push({name:newGuest.name, extraguest:newGuest.extraguest, length:newGuest.length, date: new Date()});
     guest.rsvpGuest='';
     console.log(newGuest);
+    console.log(guest.length);
   };
 
+  
   var deleteGuest = function (idx){
     guest.splice(idx, 1);
 
   };
+
+ 
 
 
 
@@ -75,7 +87,9 @@ angular.module("tbdModules.services")
       getRSVP: getRSVP,
       rsvpCtrl : rsvpCtrl,
       getGuest : getGuest,
-      addGuest : addGuest
+      addGuest : addGuest,
+      getTotalTodos : getTotalTodos
+      
     };
 
 
