@@ -11,17 +11,17 @@
 </header>
 <div>
   <div>
-    <form ng-hide="enterGift">
-      <button ng-click="enterGift = !enterGift"><i class="fa fa-times"></i></button>
+    <form>
       <input type="text" ng-model="newGift.name" placeholder="Enter Name">
       <input type="text" ng-model="newGift.location" placeholder="Enter Address">
       <input type="text" ng-model="newGift.description" placeholder="Enter Gift">
       <button ng-click="createGift(newGift)">Add Gift</button>
     </form>
   </div>
-  <div ng-repeat="gift in gifts">
+  <div ng-repeat="gift in gifts" ng-hide="enterGift">
     <h3>Name: {{gift.name}}</h3>
     <p>Address: {{gift.location}}</p>
     <p>Gift: {{gift.description}}</p>
+    <button ng-click="enterGift = !enterGift"><i class="fa fa-times"></i></button>
   </div>
 </div>

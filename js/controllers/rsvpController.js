@@ -1,22 +1,27 @@
 angular.module("tbdModules.controllers")
-.controller("rsvpController", function($scope, $location, dateService){
-  $scope.rsvp = dateService.getRSVP();
+.controller("rsvpController", function($scope, $location, rsvpService){
+  $scope.rsvp = rsvpService.getRSVP();
   $scope.createRSVP = function(rsvp){
-      dateService.addRSVP(rsvp);
+      rsvpService.addRSVP(rsvp);
       $scope.newRSVP = {};
 
     };
 
     $scope.createGuest = function(guest){
-      dateService.addGuest(guest);
+      rsvpService.addGuest(guest);
+      // rsvpService.deleteGuest(guest);
       $scope.newGuest = {};
       $scope.guest={};
       
     };
 
 
-    $scope.guests = dateService.getGuest();
-    $scope.newGuests = dateService.getTotalTodos();
+ 
+
+
+
+    $scope.guests = rsvpService.getGuest();
+    
    
     $scope.value2 = 'YES'
 
