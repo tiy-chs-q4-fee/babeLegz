@@ -361,6 +361,8 @@ h3 {
   text-align: center;
 }
 
+/*Thanks to Christian Fei for timeline sass from https://github.com/christian-fei/Timeline.css */
+
 $text-color: black;
 $bg-entry: rgba(249,227,205, 0.7);;
 
@@ -375,21 +377,6 @@ $bg-entry: rgba(249,227,205, 0.7);;
   padding:0px;
   list-style-type:none;
   
-  /*thanks to
-     https://twitter.com/JacoKoster
-  */
-  // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVQIW2NMTEz8z8gABAAPKwIlXWq1kgAAAABJRU5ErkJggg==);
-  // background-repeat:repeat-y;
-  // background-position:50% 0;
-  
-  /*
-    border-box ftw, inside .timeline now to prevent
-    screwing up your CSS rule if you are not using
-    border-box
-    if that's the case, I have nothing to say to you.
-
-    thanks to https://github.com/jimmyandrade
-  */ 
   *,*:after,&:after,*:before,&:before{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 
   .year {
