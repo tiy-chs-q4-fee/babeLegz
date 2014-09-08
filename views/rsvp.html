@@ -15,9 +15,9 @@
 
 
 
-  <form>
+  <form class="form2rsvp">
   <h3>RSVP LIST</h3>
-<h3>Total Reserved Guest: {{guests.length}}</h3>
+<h3>TOTAL GUEST REGISTERED: {{guests.length}}</h3>
         <input id="basic-slide" class="add-input" placeholder="Your Name" type="text" ng-model="newGuest.name"/>
 
         <input  class="add-input" id="basic-slide"  type="text" placeholder="Your Guest's name" ng-model="newGuest.extraguest" />
@@ -30,21 +30,42 @@
 
  <form class="stylethersvpform" >
   <div ng-repeat="guest in guests = (guests | filter: query)" class="stylersvpclass" id="listcolor">
-     <input type="checkbox"  ng-model="guest.done" ng-hide="removeRSVP" id="listcolor"> RSVP Checked</input>
 
- <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Reserved on {{guest.date | date: format : timezone}}</p>
-      <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor"> NAME {{guest.name}} </p>
+
+
+     
+     <input type="checkbox"  ng-model="guest.done" ng-hide="removeRSVP" id="listColor" ><span class="rsvpConfirmed">RSVP CONFIRMED</span></input>
+
+     <label class="slider-v3" for="listColor"></label>
+     
+
+
+     
+
+
+
+ <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   RESERVED ON :  {{guest.date | date: format : timezone}}</p>
+      <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor"> NAME : {{guest.name}} </p>
   
-   <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   Plus 1: {{guest.extraguest}}
+   <p ng-hide="removeRSVP" class="done-{{guest.done}}" id="listcolor">   PLUS ONE :  {{guest.extraguest}}
 
     <br>
 
-   <span ng-hide="removeRSVP" > <input type="checkbox" ng-model="value2" 
-                 ng-true-value="NO" ng-false-value="YES" >
-                 <tt>Children attending = {{value2}} </tt> <br/> </span></p>
+   
+
+   <input ng-hide="removeRSVP" type="checkbox" ng-model="value2" 
+                 ng-true-value="NO" ng-false-value="YES" id="childrenColor">
+        <label class="slider-v3" for="childrenColor" id="secondlabel"></label>
+                 <tt>CHILDREN ATTENDING : {{value2}} </tt> <br/> 
+
+
+    </p>
+
+
+
 
       <span ng-hide="removeRSVP" class="done-{{guest.done}}" >  </spa>
-        <!-- <button ng-click="removeRSVP=!removeRSVP">NOT COMING</button> -->
+        <!-- <button ng-click="removeRSVP=!removeRSVP"  ng-dblclick="createGuest(newGuest)">>NOT COMING</button> -->
   </div>
  </form>
 

@@ -2,6 +2,29 @@ $offwhite: #F9E3CD;
 
 
 
+.form2rsvp{
+margin-left: 22%;
+margin-top: 6%;
+
+  h3{
+    color: white;
+  }
+
+}
+.stylethersvpform{
+  background-color: rgba(249,227,205, 0.7);
+  width: 684px;
+  border-radius: 13px;
+  height: 251px;
+  border-bottom-color: white;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  overflow-y: scroll;
+  margin-left: 22%;;
+}
+
 
 #buttonwrsvp{
 border-radius: 33%;
@@ -17,7 +40,7 @@ border: none;
   padding: 10px 0 10px 15px;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  color: #377D6A;
+  color: black;
   background: #efefef;
   border: 0;
   border-radius: 3px;
@@ -35,7 +58,7 @@ border: none;
 }
 #basic-slide:focus,
 #basic-slide:active {
-  color: #377D6A;
+  color: black;
   text-indent: 0;
   background: #fff;
   border-top-left-radius: 0;
@@ -106,27 +129,68 @@ ul{
 }
 
 tt {
-font-family: ' Oswald', sans-serif;
-font-size: 20px;
+font-family: 'Oswald', sans-serif;
+font-size: 22px;
 font-weight: 300;
 }
 
-#listcolor{
-  font-family: ' Oswald', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+
+
+
+
+#listColor{
+  font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  margin-left: 2%;
+  color: white;
+  
+}
+
+.rsvpConfirmed{
+   font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  margin-left: 2%;
+  color: white;
+  
+}
+
+.stylersvpclass #listColor input {
+  font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  margin-left: 2%;
+  color: white;
+  
+}
+
+
+
+#buttonwrsvp{
+  margin-left: 2%;
+  height: 54px;
+  width: 66px;
+  }
+
+.stylethersvpform p {
+ color:white;
+ font-family: 'Oswald', sans-serif;
+font-size: 22px;
+font-weight: 300;
+margin-left: 2%;
 }
 
 body {
-  color: white;
+  color: $offwhite;
 }
 h2{
-  color:white;
+  color:$offwhite;
 }
 
 .done-true {
   text-decoration: line-through;
-  color: red;
+  color: green;
 }
 
 .header{
@@ -245,4 +309,5 @@ h3 {
         background-color:rgba(0, 140, 186, 1);
     }
 }
+
 
