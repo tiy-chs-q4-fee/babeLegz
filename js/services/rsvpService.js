@@ -36,9 +36,9 @@ var rsvp = [
 
   
   
-	 var deleteGuest= function(newGuest){
+	 // var deleteGuest= function(newGuest){
 	  	
-	  };
+	 //  };
 
 
 // return methods
@@ -47,7 +47,7 @@ var rsvp = [
       rsvpCtrl : rsvpCtrl,
       getGuest : getGuest,
       addGuest : addGuest,
-      deleteGuest: deleteGuest
+      // deleteGuest: deleteGuest
   
       
       
