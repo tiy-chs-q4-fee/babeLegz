@@ -1,3 +1,20 @@
+#giftrepeat {
+  margin-left: 2%; }
+
+.classscroll {
+  background-color: rgba(249, 227, 205, 0.7);
+  width: 72%;
+  height: 249px;
+  border-radius: 10px;
+  margin-left: 12%;
+  height: 323px;
+  margin-top: 2%;
+  overflow-y: scroll; }
+
+.giftbox {
+  margin-top: 3%;
+  margin-left: 9%; }
+
 .form2rsvp {
   margin-left: 22%;
   margin-top: 6%; }
