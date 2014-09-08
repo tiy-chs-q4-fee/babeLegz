@@ -31,7 +31,7 @@
     <li class="year">
       <h4>Eight Months Out</h4>
     </li>
-    <li class="event" ng-repeat="event in eightMonths">
+    <li class="event" ng-repeat="event in eightMonths" ng-click="done = !done" ng-hide="done">
       <h2 class="event-title">{{event.title}}</h2>
       <p class="event-note">{{event.note}}</p>
     </li>
@@ -40,7 +40,7 @@
     <li class="year">
       <h4>Six to Seven Months Out</h4>
     </li>
-    <li class="event" ng-repeat="event in sixToSevenMonths">
+    <li class="event" ng-repeat="event in sixToSevenMonths" ng-click="done = !done" ng-hide="done">
       <h2 class="event-title">{{event.title}}</h2>
       <p class="event-note">{{event.note}}</p>
     </li>
@@ -49,7 +49,7 @@
     <li class="year">
       <h4>Four to Five Months Out</h4>
     </li>
-    <li class="event" ng-repeat="event in fourToFiveMonths">
+    <li class="event" ng-repeat="event in fourToFiveMonths" ng-click="done = !done" ng-hide="done">
       <h2 class="event-title">{{event.title}}</h2>
       <p class="event-note">{{event.note}}</p>
     </li>
@@ -59,7 +59,7 @@
       <h4>Three Months Out</h4>
     </li>
     <!-- ng-repeat through the events -->
-    <li class="event" ng-repeat="event in threeMonths">
+    <li class="event" ng-repeat="event in threeMonths" ng-click="done = !done" ng-hide="done">
       <h2 class="event-title">{{event.title}}</h2>
       <p class="event-note">{{event.note}}</p>
     </li>
@@ -70,7 +70,7 @@
       <h4>Two Months Out</h4>
     </li>
     <!-- ng-repeat through the events -->
-    <li class="event" ng-repeat="event in twoMonths">
+    <li class="event" ng-repeat="event in twoMonths" ng-click="done = !done" ng-hide="done">
       <h2 class="event-title">{{event.title}}</h2>
       <p class="event-note">{{event.note}}</p>
     </li>
@@ -79,7 +79,7 @@
     <li class="year">
       <h4>One Month Out</h4>
     </li>
-      <li class="event" ng-repeat="event in oneMonth">
+      <li class="event" ng-repeat="event in oneMonth" ng-click="done = !done" ng-hide="done">
         <h2 class="event-title">{{event.title}}</h2>
         <p class="event-note">{{event.note}}</p>
       </li>
