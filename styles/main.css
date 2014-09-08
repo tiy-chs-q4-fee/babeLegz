@@ -1,6 +1,9 @@
 #giftrepeat {
   margin-left: 2%; }
 
+.dateEntry {
+  text-align: center; }
+
 .classscroll {
   background-color: rgba(249, 227, 205, 0.7);
   width: 72%;
@@ -102,7 +105,7 @@ header {
     margin: 0 1%; }
   header a {
     text-decoration: none;
-    color: #F9E3CD; }
+    color: #f9e3cd; }
   header h1 {
     margin: 0;
     padding: 0;
@@ -157,10 +160,10 @@ tt {
   margin-left: 2%; }
 
 body {
-  color: #F9E3CD; }
+  color: #f9e3cd; }
 
 h2 {
-  color: #F9E3CD; }
+  color: #f9e3cd; }
 
 .done-true {
   text-decoration: line-through;
@@ -216,7 +219,7 @@ h2 {
   color: white;
   font-size: 1.5em; }
 .budgetPage button {
-  background-color: #F9E3CD;
+  background-color: #f9e3cd;
   border: none;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -262,5 +265,3 @@ h3 {
     background-color: rgba(0, 140, 186, 0.7); }
   .dateForm .subButt:hover {
     background-color: #008cba; }
-
-/*# sourceMappingURL=main.css.map */

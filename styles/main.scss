@@ -6,9 +6,11 @@ $offwhite: #F9E3CD;
   margin-left: 2%
 
 }
-
+.dateEntry{
+  text-align:center;
+}
 .classscroll{
-  
+
 background-color: rgba(249, 227, 205, 0.7);
 width: 72%;
 height: 249px;
@@ -72,14 +74,14 @@ border: none;
   outline: 0;
   text-indent: 70px; // Arbitrary.
   transition: all .3s ease-in-out;
-  
+
   &::-webkit-input-placeholder {
     color: #efefef;
     text-indent: 0;
     font-weight: 300;
   }
 
-  
+
 }
 #basic-slide:focus,
 #basic-slide:active {
@@ -88,7 +90,7 @@ border: none;
   background: #fff;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  
+
   &::-webkit-input-placeholder {
     color: #aaa;
   }
@@ -169,7 +171,7 @@ font-weight: 300;
   font-weight: 200;
   margin-left: 2%;
   color: white;
-  
+
 }
 
 .rsvpConfirmed{
@@ -178,7 +180,7 @@ font-weight: 300;
   font-weight: 200;
   margin-left: 2%;
   color: white;
-  
+
 }
 
 .stylersvpclass #listColor input {
@@ -187,7 +189,7 @@ font-weight: 300;
   font-weight: 200;
   margin-left: 2%;
   color: white;
-  
+
 }
 
 
@@ -334,5 +336,3 @@ h3 {
         background-color:rgba(0, 140, 186, 1);
     }
 }
-
-
