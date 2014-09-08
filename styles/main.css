@@ -1,3 +1,77 @@
+#giftrepeat {
+  margin-left: 2%; }
+
+.classscroll {
+  background-color: rgba(249, 227, 205, 0.7);
+  width: 72%;
+  height: 249px;
+  border-radius: 10px;
+  margin-left: 12%;
+  height: 323px;
+  margin-top: 2%;
+  overflow-y: scroll; }
+
+.giftbox {
+  margin-top: 3%;
+  margin-left: 9%; }
+
+.form2rsvp {
+  margin-left: 22%;
+  margin-top: 6%; }
+  .form2rsvp h3 {
+    color: white; }
+
+.stylethersvpform {
+  background-color: rgba(249, 227, 205, 0.7);
+  width: 684px;
+  border-radius: 13px;
+  height: 251px;
+  border-bottom-color: white;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  overflow-y: scroll;
+  margin-left: 22%; }
+
+#buttonwrsvp {
+  border-radius: 33%;
+  background-color: white;
+  border: none; }
+
+#basic-slide {
+  font-size: 24px;
+  display: inline-block;
+  width: 326px;
+  padding: 10px 0 10px 15px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: black;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 70px;
+  transition: all .3s ease-in-out; }
+  #basic-slide::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300; }
+
+#basic-slide:focus,
+#basic-slide:active {
+  color: black;
+  text-indent: 0;
+  background: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+  #basic-slide:focus::-webkit-input-placeholder,
+  #basic-slide:active::-webkit-input-placeholder {
+    color: #aaa; }
+  #basic-slide:focus + label,
+  #basic-slide:active + label {
+    transform: translateX(-100%); }
+
 body {
   background-image: url(../images/tbdBG.png);
   background-size: 100%;
@@ -47,18 +121,53 @@ form {
 ul {
   list-style: none; }
 
-#listcolor {
+tt {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 300; }
+
+#listColor {
+  font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  margin-left: 2%;
   color: white; }
+
+.rsvpConfirmed {
+  font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  margin-left: 2%;
+  color: white; }
+
+.stylersvpclass #listColor input {
+  font-family: 'Oswald', sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  margin-left: 2%;
+  color: white; }
+
+#buttonwrsvp {
+  margin-left: 2%;
+  height: 54px;
+  width: 66px; }
+
+.stylethersvpform p {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  margin-left: 2%; }
 
 body {
-  color: white; }
+  color: #F9E3CD; }
 
 h2 {
-  color: white; }
+  color: #F9E3CD; }
 
 .done-true {
   text-decoration: line-through;
-  color: #ddd; }
+  color: green; }
 
 .header {
   text-align: center;
@@ -157,6 +266,7 @@ h3 {
   .dateForm .subButt:hover {
     background-color: #008cba; }
 
+<<<<<<< HEAD
 .slideOne {
   width: 50px;
   height: 10px;
@@ -293,4 +403,6 @@ h3 {
     background: #FAFAFA;
     border-bottom: 1px solid #cac4c4; }
 
+=======
+>>>>>>> 7a33f0621cce3fa6d0d13e28b1dd193bdde0a085
 /*# sourceMappingURL=main.css.map */

@@ -10,18 +10,20 @@
   </nav>
 </header>
 <div>
-  <div>
-    <form ng-hide="enterGift">
-      <button ng-click="enterGift = !enterGift"><i class="fa fa-times"></i></button>
-      <input type="text" ng-model="newGift.name" placeholder="Enter Name">
-      <input type="text" ng-model="newGift.location" placeholder="Enter Address">
-      <input type="text" ng-model="newGift.description" placeholder="Enter Gift">
-      <button ng-click="createGift(newGift)">Add Gift</button>
+  <div class="giftbox">
+    <form>
+      <input id="basic-slide" type="text" ng-model="newGift.name" placeholder="Enter Name">
+      <input id="basic-slide" type="text" ng-model="newGift.location" placeholder="Enter Address">
+      <input id="basic-slide" type="text" ng-model="newGift.description" placeholder="Enter Gift">
+      <button id="buttonwrsvp" ng-click="createGift(newGift)"><i class="fa fa-circle-o-notch fa-spin fa-4x"></i></button>
     </form>
   </div>
-  <div ng-repeat="gift in gifts">
-    <h3>Name: {{gift.name}}</h3>
-    <p>Address: {{gift.location}}</p>
-    <p>Gift: {{gift.description}}</p>
+  <div class="classscroll">
+    <div ng-repeat="gift in gifts" ng-hide="enterGift" id="giftrepeat">
+      <h3>Name: {{gift.name}}</h3>
+      <h3>Address: {{gift.location}}</h3>
+      <h3>Gift: {{gift.description}}</h3>
+      <button ng-click="enterGift = !enterGift"><i class="fa fa-times fa-4x"></i></button>
+    </div>
   </div>
 </div>

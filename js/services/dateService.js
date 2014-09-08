@@ -19,67 +19,10 @@ angular.module("tbdModules.services")
     };
 
    
-    var gifts = [];
-
-
-    var getGifts = function() {
-      return gifts;
-    };
-
-    var addGift = function (newGift) {
-      gifts.push(newGift);
-      console.log(gifts);
-    };
-
-    var rsvp = [
-    {text: 'Mark Twain', done:true},
-    {text: 'Sara Elizabeth', done:false},
-    {text: 'John Henry', done:false}
-    ];
-
-    var getRSVP = function (){
-      return rsvp;
-    };
-
-    function rsvpCtrl($scope) {
-    $scope.rsvp = [];
-    };
-
-
-    var guest = [];
-
-     var getGuest = function() {
-      return guest;
-    };
-
-    var addGuest = function (newGuest) {
-    guest.push(newGuest);
-    guest.rsvpGuest='';
-    console.log(newGuest);
-  };
-
-  var deleteGuest = function (idx){
-    guest.splice(idx, 1);
-
-  };
-
-
-
-
-    // return methods
     return{
       setWeddingDate : setWeddingDate,
       getDaysUntilWedding : getDaysUntilWedding,
-      getGifts: getGifts,
-      addGift: addGift,
-      getRSVP: getRSVP,
-      rsvpCtrl : rsvpCtrl,
-      getGuest : getGuest,
-      addGuest : addGuest
     };
-
-
-
 
 
   });
